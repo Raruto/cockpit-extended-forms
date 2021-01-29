@@ -43,4 +43,6 @@ php ./cp install/addon --name ExtendedForms --url https://github.com/Raruto/cock
 
 ---
 
+**Related projects:** [AdvancedForms](https://github.com/uktcmtt/cockpit-module-advancedforms), [FormValidation](https://github.com/raffaelj/cockpit_FormValidation)
+
 **Compatibile with:** [![Cockpit CMS](https://img.shields.io/badge/cockpit-0.11.2-1EB300.svg?style=flat)](https://github.com/agentejo/cockpit)
