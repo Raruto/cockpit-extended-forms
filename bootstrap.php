@@ -119,7 +119,7 @@ $app->module('forms')->extend([
 
                 // Fallback to default email template
                 if (empty($body)) {
-                    $body = $this->app->view("forms:views/api/email.php", ['data' => $data, 'frm' => $frm]);
+                    $body = $this->app->view("extendedforms:views/api/email.php", ['data' => $data, 'frm' => $frm]);
                 }
 
                 $formname = isset($frm['label']) && trim($frm['label']) ? $frm['label'] : $form;
