@@ -4,7 +4,9 @@ Extended forms addon for [Cockpit CMS](http://getcockpit.com/)
 
 ## Features
 
-Automatically check and retrieve forms uploaded files.
+- Automatically check and retrieve forms uploaded files.
+- Improved "Forms::open" and "Forms::close" api
+- Improved "Forms::submit" logic
 
 ## Installation
 
