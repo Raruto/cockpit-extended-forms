@@ -38,7 +38,7 @@ class Utils extends \Lime\Helper {
         $folder = $this->app->storage->findOne('cockpit/assets_folders', ['name'=>$name, '_p'=>$parent]);
 
         if (empty($folder)) {
-            $user   = ->storage->findOne('cockpit/accounts', ['group'=>'admin'], ['_id' => 1]);
+            $user   = $this->app->storage->findOne('cockpit/accounts', ['group'=>'admin'], ['_id' => 1]);
             $meta   = [
                 'name' => $name,
                 '_p'   => $parent,

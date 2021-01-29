@@ -181,14 +181,14 @@ $app->renderer->extend(function($content) {
  *
  * @return array $folder
  */
-$app->on('forms.submit.before', function($form, &$data, $frm, &$options) use ($app) {
+$app->on('forms.submit.before', function($form, &$data, $frm, &$options) {
 
-    $forms = $this->app->helper('extendedforms');
+    $forms = $this->helper('extendedforms');
     $files = $forms->get_uploaded_files();
 
     if (!empty($files)) {
 
-        $files = $app->module('cockpit')->uploadAssets('files', ['folder' => $forms->get_forms_uploads_folder()]);
+        $files = $this->module('cockpit')->uploadAssets('files', ['folder' => $forms->get_forms_uploads_folder()]);
 
         // save entries as filename
         $data['files'] = $files['uploaded'];
